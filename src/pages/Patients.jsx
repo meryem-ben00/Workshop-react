@@ -2,73 +2,181 @@ import React from 'react'
 
 function Patients() {
   return (
-    <div>
-      <div>
-        <h1>OP - Register a patient</h1>
+    <div className="m-36">
+      <div className="flex">
+        <div className="pt-6">
+          <h1>OP - Register a patient</h1>
+        </div>
+        <div>
+          <h1>ID: #123</h1>
+        </div>
       </div>
-      <div>
-        <form>
-          <div class="mb-6">
-            <label
-              for="email"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Name
-            </label>
-            <input
-              type="email"
-              id="email"
-              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-              placeholder="name@flowbite.com"
-              required
-            />
-          </div>
-          <div class="mb-6">
-            <label
-              for="password"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Date
-            </label>
-            <input
-              type="password"
-              id="password"
-              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-              required
-            />
-          </div>
-          <div class="mb-6">
-            <label
-              for="repeat-password"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Repeat password
-            </label>
-            <input
-              type="password"
-              id="repeat-password"
-              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-              required
-            />
-          </div>
-          <div class="flex items-start mb-6">
-            <div class="flex items-center h-5">
+      <div className="grid md:grid-cols-2 md:gap-6">
+        <div className="relative z-0 w-full mb-6 group">
+          <label
+            for="Name"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Name
+          </label>
+          <input
+            class="w-full bg-[#D9D9D9] text-gray-900 mt-2 p-3 rounded-3xl focus:outline-none focus:shadow-outline"
+            type="text"
+          />
+        </div>
+        <div className="relative z-0 w-full mb-6 group">
+          <label
+            for="Date"
+            class="block mb-2 text-sm font-medium  text-gray-900 dark:text-white"
+          >
+            Date
+          </label>
+          <input
+            class="w-full bg-[#D9D9D9] text-gray-900 mt-2 p-3 rounded-3xl focus:outline-none focus:shadow-outline"
+            type="text"
+          />
+        </div>
+      </div>
+      <div className="grid md:grid-cols-3 md:gap-6">
+        <div className="relative z-0 w-full mb-6 group">
+          <label
+            for="Name"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Age
+          </label>
+          <input
+            class="w-full bg-[#D9D9D9] text-gray-900 mt-2 p-3 rounded-3xl focus:outline-none focus:shadow-outline"
+            type="text"
+          />
+        </div>
+        <div className="relative z-0 w-full mb-6 group">
+          <label
+            for="Date"
+            class="block mb-2 text-sm font-medium ml-28 text-gray-900 dark:text-white"
+          >
+            Gender
+          </label>
+          <div class="flex mt-6 ml-28">
+            <div class="flex items-center mr-4">
               <input
-                id="terms"
-                type="checkbox"
+                id="inline-radio"
+                type="radio"
                 value=""
-                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
-                required
+                name="inline-radio-group"
+                class="w-4 h-4 text-blue-600 bg-[#D9D9D9] border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
+              <label
+                for="inline-radio"
+                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Male
+              </label>
+            </div>
+            <div class="flex items-center mr-4">
+              <input
+                id="inline-2-radio"
+                type="radio"
+                value=""
+                name="inline-radio-group"
+                class="w-4 h-4 text-blue-600 bg-[#D9D9D9] border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                for="inline-2-radio"
+                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Female
+              </label>
+            </div>
+            <div class="flex items-center mr-4">
+              <input
+                id="inline-3-radio"
+                type="radio"
+                value=""
+                name="inline-radio-group"
+                class="w-4 h-4 text-blue-600 bg-[#D9D9D9] border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                for="inline-3-radio"
+                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Author
+              </label>
             </div>
           </div>
-          <button
-            type="submit"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        </div>
+        <div className="relative z-0 w-full mb-6 group">
+          <label
+            for="Date"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
           >
-            Register new account
+            Blood group
+          </label>
+          <input
+            class="w-full bg-[#D9D9D9] text-gray-900 mt-2 p-3 rounded-3xl focus:outline-none focus:shadow-outline"
+            type="text"
+          />
+        </div>
+      </div>
+      <div class="mb-6">
+        <label
+          for="default-input"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        >
+          House Address
+        </label>
+        <input
+          type="text"
+          id="default-input"
+          placeholder="name,house,city,...."
+          class="w-full bg-[#D9D9D9] text-gray-900 mt-2 p-3 rounded-3xl focus:outline-none focus:shadow-outline"
+        />
+      </div>
+      <div className="grid md:grid-cols-2 md:gap-6">
+        <div className="relative z-0 w-full mb-6 group">
+          <label
+            for="Name"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Phone
+          </label>
+          <input
+            class="w-full bg-[#D9D9D9] text-gray-900 mt-2 p-3 rounded-3xl focus:outline-none focus:shadow-outline"
+            type="text"
+          />
+        </div>
+        <div className="relative z-0 w-full mb-6 group">
+          <label
+            for="Date"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Date or Birth
+          </label>
+          <input
+            class="w-full bg-[#D9D9D9] text-gray-900 mt-2 p-3 rounded-3xl focus:outline-none focus:shadow-outline"
+            type="text"
+          />
+        </div>
+        <div className="relative z-0 w-full mb-6 group">
+          <label
+            for="Date"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >
+            Department
+          </label>
+          <input
+            class="w-full bg-[#D9D9D9] text-gray-900 mt-2 p-3 rounded-3xl focus:outline-none focus:shadow-outline"
+            type="text"
+          />
+        </div>
+        <div className="relative z-0 w-full mb-6 group">
+          <button
+            type="button"
+            class="w-full mt-8 h-12 text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            Register
           </button>
-        </form>
+        </div>
       </div>
     </div>
   )
