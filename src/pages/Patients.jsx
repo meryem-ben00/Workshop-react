@@ -50,15 +50,15 @@ function Patients() {
             type="text"
           />
         </div>
-        <div className="relative z-0 w-full mb-6 group">
+        <div className="relative justify-center items-center z-0 w-full mb-6 group">
           <label
             for="Date"
-            class="block mb-2 text-sm font-medium ml-28 text-gray-900 dark:text-white"
+            class="block mb-6 text-sm font-medium items-center justify-center text-gray-900 dark:text-white"
           >
             Gender
           </label>
-          <div class="flex mt-6 ml-28">
-            <div class="flex items-center mr-4">
+          <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center mr-4">
               <input
                 id="inline-radio"
                 type="radio"
