@@ -50,10 +50,10 @@ function Patients() {
             type="text"
           />
         </div>
-        <div className="relative justify-center items-center z-0 w-full mb-6 group">
+        <div className="relative  z-0 w-full mb-6 group">
           <label
-            for="Date"
-            class="block mb-6 text-sm font-medium items-center justify-center text-gray-900 dark:text-white"
+            for="gender"
+            class="block  mb-6 text-sm font-medium  text-gray-900 dark:text-white"
           >
             Gender
           </label>
