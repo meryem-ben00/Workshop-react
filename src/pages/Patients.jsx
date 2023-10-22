@@ -3,11 +3,11 @@ import React from 'react'
 function Patients() {
   return (
     <div className="m-36">
-      <div className="flex">
-        <div className="pt-6">
-          <h1>OP - Register a patient</h1>
+      <div className="flex justify-between relative">
+        <div className="">
+          <h1 className="text-3xl font-extrabold">OP - Register a patient</h1>
         </div>
-        <div>
+        <div className="">
           <h1>ID: #123</h1>
         </div>
       </div>
@@ -52,13 +52,19 @@ function Patients() {
         </div>
         <div className="relative justify-center items-center z-0 w-full mb-6 group">
           <label
-            for="Date"
+            for="Gender"
             class="block mb-6 text-sm font-medium items-center justify-center text-gray-900 dark:text-white"
           >
             Gender
           </label>
-          <div class="flex items-center justify-center">
+          <div class="flex  items-center justify-center">
             <div class="flex items-center justify-center mr-4">
+              <label
+                for="inline-radio"
+                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Male
+              </label>
               <input
                 id="inline-radio"
                 type="radio"
@@ -66,14 +72,14 @@ function Patients() {
                 name="inline-radio-group"
                 class="w-4 h-4 text-blue-600 bg-[#D9D9D9] border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
-              <label
-                for="inline-radio"
-                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Male
-              </label>
             </div>
             <div class="flex items-center mr-4">
+              <label
+                for="inline-2-radio"
+                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Female
+              </label>
               <input
                 id="inline-2-radio"
                 type="radio"
@@ -81,14 +87,14 @@ function Patients() {
                 name="inline-radio-group"
                 class="w-4 h-4 text-blue-600 bg-[#D9D9D9] border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
-              <label
-                for="inline-2-radio"
-                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Female
-              </label>
             </div>
             <div class="flex items-center mr-4">
+              <label
+                for="inline-3-radio"
+                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                Author
+              </label>
               <input
                 id="inline-3-radio"
                 type="radio"
@@ -96,12 +102,6 @@ function Patients() {
                 name="inline-radio-group"
                 class="w-4 h-4 text-blue-600 bg-[#D9D9D9] border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
-              <label
-                for="inline-3-radio"
-                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Author
-              </label>
             </div>
           </div>
         </div>
