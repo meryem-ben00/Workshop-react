@@ -74,7 +74,7 @@ function Navbare() {
             </li>
             <li>
               <ActiveNavLink
-                to="/users/"
+                to="/users/doctor"
                 isActive={isActive("/users/")}
                 className={`link ${
                   isActive("/users/")
