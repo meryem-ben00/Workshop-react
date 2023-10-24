@@ -104,7 +104,6 @@ function Navbare() {
                     </ActiveNavLink>
                   </li>
                   <li>
-                    {" "}
                     <ActiveNavLink
                       to="/users/administration"
                       className={`block px-4 py-2 text-black hover:bg-green-700 rounded hover:bg-opacity-25 ${
