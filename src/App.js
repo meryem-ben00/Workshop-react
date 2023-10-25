@@ -4,7 +4,9 @@ import Dashboard from "./pages/Dashboard";
 import Users from "./pages/Users";
 import Patients from "./pages/Patients";
 import Test from "./pages/Test";
-import Base from "./pages/addDoctor/Base";
+import Base from "./pages/addDoctor/Base.jsx";
+import SignIn from "./pages/sign/SignIn";
+import SignUp from "./pages/sign/SignUp";
 
 function App() {
     return ( <
@@ -28,9 +30,17 @@ function App() {
         Route path = "/test"
         element = { < Test / > }
         /> <
-        Route path = "/addDoctor"
+        Route path = "/users/addDoctor"
         element = { < Base / > }
         /> <
+        Route path = "/SignIn"
+        element = { < SignIn / > }
+        /> <
+        Route path = "/SignUp"
+        element = { < SignUp / > }
+        />
+
+        <
         /Routes> <
         /BrowserRouter> <
         /div>

@@ -50,6 +50,9 @@ function Navbare() {
   const hideDropdown = () => {
     setShowDropdown(false);
   };
+    if (location.pathname === "/SignIn" || location.pathname === "/SignUp"  ) {
+    return null; 
+  }
 
   return (
     <div className="flex justify-between bg-greenNav text-white items-center ">
