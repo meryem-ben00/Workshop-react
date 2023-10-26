@@ -9,7 +9,7 @@ export default function SignUp() {
     return ( <
         div className = 'flex justify-center items-center h-screen' >
         <
-        div className = 'flex flex-col w-[400px] h-[550px] bg-[#FFFFFF] rounded-md  items-center px-14' >
+        div className = 'flex flex-col w-[400px] h-[570px] bg-[#FFFFFF] rounded-md  items-center px-14' >
         <
         div className = "p-5  w-full flex justify-center mb-7 mt-2" >
         <
@@ -24,7 +24,11 @@ export default function SignUp() {
         /div> <
         div className = 'flex flex-col w-full ' >
         <
-        label className = 'text-black font-normal text-xs  pb-1' > Email or Username < /label> <
+        label className = 'text-black font-normal text-xs  pb-1' > Username < /label> <
+        input type = 'text'
+        className = 'w-[255px] bg-[#DCDCDC] outline-none rounded mb-2 focus:text-black  ' / >
+        <
+        label className = 'text-black font-normal text-xs  pb-1' > Email < /label> <
         input type = 'text'
         className = 'w-[255px] bg-[#DCDCDC] outline-none rounded mb-2 focus:text-black  ' / >
         <
