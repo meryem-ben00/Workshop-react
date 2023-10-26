@@ -4,9 +4,8 @@
 
 * {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
-  color: white;
 }
 body {
   margin: 0;
@@ -24,6 +23,6 @@ ul {
   padding: 0;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
