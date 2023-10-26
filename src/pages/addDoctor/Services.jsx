@@ -18,7 +18,6 @@ export default function Services() {
         <
         option value = ""
         disabled selected >
-
         Select doctor type <
         /option> <
         option > select < /option> <option> select </option >
@@ -42,18 +41,16 @@ export default function Services() {
 
         Your gender <
         /label> <
-        select className = "w-[100%] h-10 bg-[#1E2E5C] border-[1px] border-solid text-white border-white rounded outline-none px-4 py-1 mb-7" >
+        select className = "w-[100%] h-10 bg-[#1E2E5C] text-white border-[1px] border-solid text-white border-white rounded outline-none px-4 py-1 mb-7" >
         <
         option value = ""
         disabled selected >
-
         Select gender <
         /option> <
         option > select < /option> <option> select </option >
         <
         /select> <
         label className = "font-normal text-xs text-[#5F8D4E] pb-1" >
-
         Designation <
         /label> <
         input placeholder = "Your first name"

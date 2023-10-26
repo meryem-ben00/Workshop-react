@@ -13,7 +13,7 @@ const Basic = () => {
         div className = 'flex flex-col w-[100%] ' >
         <
         label className = 'font-normal text-xs text-[#5F8D4E] pb-1' > User type < /label> <
-        select className = 'w-[100%] h-10 bg-[#1E2E5C] border-[1px] border-solid border-white rounded outline-none px-4 py-1 mb-7' >
+        select className = 'w-[100%] h-10 bg-[#1E2E5C] border-[1px] border-solid text-white border-white rounded outline-none px-4 py-1 mb-7' >
         <
         option value = ""
         disabled selected > Select an option < /option> <
@@ -38,8 +38,8 @@ const Basic = () => {
         <
         div className = 'flex flex-col w-[100%] h-full ' >
         <
-        label className = 'font-normal text-xs text-[#5F8D4E] pb-1' > Your gender < /label> <
-        select className = 'w-[100%] h-10 bg-[#1E2E5C] border-[1px] border-solid border-white rounded outline-none px-4 py-1 mb-7' >
+        label className = 'font-normal text-xs text-[#5F8D4E]  pb-1' > Your gender < /label> <
+        select className = 'w-[100%] h-10 bg-[#1E2E5C] border-[1px] border-solid text-white border-white rounded outline-none px-4 py-1 mb-7' >
         <
         option value = ""
         disabled selected > Select gender < /option> <
@@ -53,7 +53,7 @@ const Basic = () => {
         label className = 'font-normal text-xs text-[#5F8D4E] pb-1' > Date of birth < /label> <
         input placeholder = 'Your last name'
         type = 'date'
-        className = 'w-[100%] h-10 bg-[#1E2E5C] border-[1px] border-solid border-white rounded outline-none px-4 py-1 mb-7' / >
+        className = 'w-[100%] h-10 text-white  bg-[#1E2E5C] border-[1px] border-solid border-white rounded outline-none px-4 py-1 mb-7' / >
 
         <
         /div> <

@@ -40,7 +40,7 @@ export default function Headers({ step, move_between_li }) {
         /ul> <
         div className = "max-w-screen-lg mx-auto p-4 w-full " >
         <
-        h3 className = "font-medium text-base" > { stepTitles[step] } < /h3> <
+        h3 className = "font-medium text-base text-white" > { stepTitles[step] } < /h3> <
         /div> <
         /div>
     );

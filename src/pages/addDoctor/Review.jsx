@@ -85,7 +85,7 @@ export default function Review() {
         /div> <
         div className = "py-7 px-6" >
         <
-        h3 className = "font-medium text-base" > Details < /h3> <
+        h3 className = "font-medium text-base text-white" > Details < /h3> <
         /div> <
         div className = "flex justify-center items-start w-full gap-8 flex-grow max-w-screen-lg mx-auto border-b border-white border-solid pb-8 px-6" >
         <
@@ -128,7 +128,7 @@ export default function Review() {
         /div> <
         div className = "py-7 px-6" >
         <
-        h3 className = "font-medium text-base" > Services < /h3> <
+        h3 className = "font-medium text-base text-white" > Services < /h3> <
         /div> <
         div className = "flex justify-center items-start w-full gap-8 flex-grow max-w-screen-lg mx-auto pb-8 px-6" >
         <
