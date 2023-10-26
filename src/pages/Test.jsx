@@ -6,13 +6,12 @@ import { AiOutlinePlusCircle } from 'react-icons/ai'
 
 function Test() {
   return (
-    <div>
-      <div className="flex mx-auto my-[50px]">
+    <div className="my-[50px]">
+      <div className="flex mx-auto ">
         <div className="w-full">
-          <div>
-            <h1 className="text-white text-3xl ml-11">Create Test</h1>
-          </div>
-          <div className="mx-auto relative   ml-80 justify-center object-center items-center content-center">
+          <h1 className="text-white text-3xl ml-11">Create Test</h1>
+
+          <div className="mx-auto relative w-[50%]">
             <div className="">
               <ul className="flex gap-5 text-white">
                 <li>
@@ -37,7 +36,7 @@ function Test() {
                 </li>
               </ul>
             </div>
-            <div class="w-[60%] h-[100%] bg-[#9198aa] rounded-3xl">
+            <div class=" h-[100%] bg-[#9198aa] rounded-3xl">
               <div className="m-9 pb-6 pt-6">
                 <div className="mb-2 mt-3">
                   <div className="flex justify-between">
@@ -74,7 +73,7 @@ function Test() {
                   />
 
                   <button
-                    className="z-[2] inline-block rounded-none  px-6 pb-2 pt-2.5 text-xs bg-white"
+                    className="z-[2] inline-block rounded-none  px-2 pb-2 pt-2.5 text-xs bg-white"
                     type="button"
                     data-te-ripple-init
                   >
@@ -82,7 +81,7 @@ function Test() {
                   </button>
                   <span className="h-10 w-[1px] bg-gray-700" />
                   <button
-                    className="z-[2] inline-block rounded-none  px-6 pb-2 pt-2.5 text-xs bg-white"
+                    className="z-[2] inline-block  rounded-r-lg  px-2  pb-2 pt-2.5 text-xs bg-white"
                     type="button"
                     data-te-ripple-init
                   >
@@ -102,7 +101,7 @@ function Test() {
                   />
 
                   <button
-                    className="z-[2] inline-block rounded-none  px-6 pb-2 pt-2.5 text-xs bg-white"
+                    className="z-[2] inline-block rounded-none  px-2  pb-2 pt-2.5 text-xs bg-white"
                     type="button"
                     data-te-ripple-init
                   >
@@ -111,7 +110,7 @@ function Test() {
                   <span className="h-10 w-[1px] bg-gray-700" />
                   <div>
                     <button
-                      className="z-[2] inline-block rounded-none  px-6 pb-2 pt-2.5 text-xs bg-white"
+                      className="z-[2] inline-block rounded-r-lg  px-2  pb-2 pt-2.5 text-xs bg-white"
                       type="button"
                       data-te-ripple-init
                     >
@@ -125,7 +124,7 @@ function Test() {
                 </div>
               </div>
             </div>
-            <div class="w-[60%] h-[100%] bg-[#9198aa] rounded-3xl">
+            <div class=" h-[100%] bg-[#9198aa] rounded-3xl">
               <div className="m-9 pb-6 pt-6">
                 <div className="mb-2 mt-3">
                   <div className="flex justify-between">
@@ -156,13 +155,13 @@ function Test() {
 
                   <input
                     type="text"
-                    class="relative m-0 mr-[2px]  block min-w-0 flex-auto rounded-l w-11 border border-solid bg-white border-neutral-300   px-3 py-[0.25rem] text-base font-normal leading-[1.6]  outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary    dark:text-neutral-200 dark:placeholder:text-black dark:focus:border-primary"
+                    class="relative m-0 mr-[2px] block min-w-0 flex-auto rounded-l w-11 border border-solid bg-white border-neutral-300   px-3 py-[0.25rem] text-base font-normal leading-[1.6]  outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary    dark:text-neutral-200 dark:placeholder:text-black dark:focus:border-primary"
                     placeholder="Test......."
                     aria-label="Recipient's username with two button addons"
                   />
 
                   <button
-                    className="z-[2] inline-block rounded-none  px-6 pb-2 pt-2.5 text-xs bg-white"
+                    className="z-[2] inline-block rounded-none  px-2 rounded- pb-2 pt-2.5 text-xs bg-white"
                     type="button"
                     data-te-ripple-init
                   >
@@ -170,7 +169,7 @@ function Test() {
                   </button>
                   <span className="h-10 w-[1px] bg-gray-700" />
                   <button
-                    className="z-[2] inline-block rounded-none  px-6 pb-2 pt-2.5 text-xs bg-white"
+                    className="z-[2] inline-block rounded-r-lg  px-2  pb-2 pt-2.5 text-xs bg-white"
                     type="button"
                     data-te-ripple-init
                   >
@@ -190,20 +189,22 @@ function Test() {
                   />
 
                   <button
-                    className="z-[2] inline-block rounded-none  px-6 pb-2 pt-2.5 text-xs bg-white"
+                    className="z-[2] inline-block rounded-none  px-2 rounded- pb-2 pt-2.5 text-xs bg-white"
                     type="button"
                     data-te-ripple-init
                   >
                     <FaCheck className="text-green-700 text-2xl" />
                   </button>
                   <span className="h-10 w-[1px] bg-gray-700" />
-                  <button
-                    className="z-[2] inline-block rounded-none  px-6 pb-2 pt-2.5 text-xs bg-white"
-                    type="button"
-                    data-te-ripple-init
-                  >
-                    <RxCross1 className="text-2xl cursor-pointer text-[#1e2e5c]" />
-                  </button>
+                  <div>
+                    <button
+                      className="z-[2] inline-block  px-2 rounded-r-lg  pb-2 pt-2.5 text-xs bg-white"
+                      type="button"
+                      data-te-ripple-init
+                    >
+                      <RxCross1 className="text-2xl cursor-pointer text-[#1e2e5c]" />
+                    </button>
+                  </div>
                 </div>
                 <div className="text-white flex justify-end pt-2">
                   <h1>Add more</h1>
@@ -214,7 +215,7 @@ function Test() {
           </div>
         </div>
       </div>
-      <div className="flex space-x-9 relative justify-center mt-5">
+      <div className="flex space-x-9 relative justify-center">
         <button className="text-white">Cancel</button>
         <button
           type="button"

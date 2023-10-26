@@ -4,13 +4,15 @@ import { AiOutlineArrowLeft } from 'react-icons/ai'
 function Patients() {
   return (
     <div className="">
-      <AiOutlineArrowLeft className="absolute top-24 right-24 text-3xl" />
+      <AiOutlineArrowLeft className="absolute top-24 right-24 text-3xl text-white" />
       <div className="w-6/12 mx-auto my-[50px]">
         <div className="flex justify-between relative">
           <div className="mb-12">
-            <h1 className="text-3xl font-extrabold">OP - Register a patient</h1>
+            <h1 className="text-3xl font-extrabold text-white">
+              OP - Register a patient
+            </h1>
           </div>
-          <div className="mt-12">
+          <div className="mt-12 text-white">
             <h1>ID: #123</h1>
           </div>
         </div>
