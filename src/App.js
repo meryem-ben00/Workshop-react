@@ -4,7 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import Users from "./pages/Users";
 import Patients from "./pages/Patients";
 import Test from "./pages/Test";
-import Base from "./pages/addDoctor/Base.jsx";
+import Principale from "./pages/addDoctor/Principale.jsx";
 import SignIn from "./pages/sign/SignIn";
 import SignUp from "./pages/sign/SignUp";
 
@@ -31,7 +31,7 @@ function App() {
         element = { < Test / > }
         /> <
         Route path = "/users/addDoctor"
-        element = { < Base / > }
+        element = { < Principale / > }
         /> <
         Route path = "/SignIn"
         element = { < SignIn / > }
