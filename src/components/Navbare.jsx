@@ -155,7 +155,9 @@ function Navbare() {
         </div>
       </div>
       <div className="flex gap-5">
-        <img className="cursor-pointer" src={chat} alt="" />
+      <ActiveNavLink to="/chat" onClick={() => console.log("Chat icon clicked!")}>
+          <img className="cursor-pointer" src={chat} alt="Chat Icon" />
+      </ActiveNavLink>
         <div className="flex gap-2">
           <div className="flex flex-col text-xs">
             <strong className="">Marvin Mckinney</strong>
