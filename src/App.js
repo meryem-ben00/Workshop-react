@@ -21,25 +21,25 @@ function App() {
         <
         Route exact path = "/"
         element = { < Dashboard / > }
-        />{" "} <
+        /> <
         Route path = "/users/*"
         element = { < Users / > }
-        />{" "} <
+        /> <
         Route path = "/patients"
         element = { < Patients / > }
-        />{" "} <
+        /> <
         Route path = "/test"
         element = { < Test / > }
-        />{" "} <
+        /> <
         Route path = "/osama"
         element = { < Osama / > }
         /> <
         Route path = "/users/addDoctor"
         element = { < Principale / > }
-        />{" "} <
+        /> <
         Route path = "/SignIn"
         element = { < SignIn / > }
-        />{" "} <
+        /> <
         Route path = "/SignUp"
         element = { < SignUp / > }
         />
