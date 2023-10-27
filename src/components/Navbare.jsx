@@ -5,7 +5,8 @@ import logo2 from "../images/logoImages/Background.png";
 import chat from "../images/logoImages/Group-chat.svg";
 import logout from "../images/logoImages/bx_log-out.svg";
 import styled, { css } from "styled-components";
-const ActiveNavLink = styled(NavLink)`
+const ActiveNavLink = styled(NavLink)
+`
   position: relative;
 
   ${(props) =>
@@ -49,6 +50,9 @@ function Navbare() {
   const hideDropdown = () => {
     setShowDropdown(false);
   };
+    if (location.pathname === "/SignIn" || location.pathname === "/SignUp"  ) {
+    return null; 
+  }
 
   return (
     <div className="flex justify-between bg-greenNav text-white items-center ">
