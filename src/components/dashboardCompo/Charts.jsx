@@ -83,7 +83,7 @@ function Charts() {
               stroke="#82ca9d"
               fillOpacity={1}
               fill="url(#Total)"
-              strokeWidth={2}
+              strokeWidth={5}
             />
             <Area
               type="monotone"
@@ -91,7 +91,7 @@ function Charts() {
               stroke="#8884d8"
               fillOpacity={1}
               fill="url(#Total2)"
-              strokeWidth={2}
+              strokeWidth={5}
             />
           </AreaChart>
         </ResponsiveContainer>
