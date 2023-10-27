@@ -13,24 +13,27 @@ function Test() {
 
           <div className="mx-auto relative w-[50%]">
             <div className="">
-              <ul className="flex gap-5 text-white">
+              <ul className="flex gap-5 text-white border-b-4 border-white">
                 <li>
-                  <a href="/" className="border-b-4 border-green-700">
+                  <a
+                    href="/"
+                    className="border-b-[5px] text-green-700 border-green-700"
+                  >
                     ADHD
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="border-b-4 border-white">
+                  <a href="/" className="">
                     Depression
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="border-b-4 border-white">
+                  <a href="/" className="">
                     Anxiety
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="border-b-4 border-white">
+                  <a href="/" className="">
                     Bipolar Disorder
                   </a>
                 </li>
@@ -219,7 +222,7 @@ function Test() {
         <button className="text-white">Cancel</button>
         <button
           type="button"
-          class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+          class="focus:outline-none text-white bg-[#2f8348] hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 "
         >
           Publish
         </button>
