@@ -164,7 +164,18 @@ function Navbare() {
             <strong className="">Marvin Mckinney</strong>
             <span className="self-end">Admin</span>
           </div>
-          <img className="cursor-pointer" src={logo2} alt="" />
+          <ActiveNavLink
+                to="/settings"
+                className={`settings ${
+                  isActive("/settings")
+                    ? ""
+                    : ""
+                }`}
+                onClick={hideDropdown}
+              >
+              <img className="cursor-pointer" src={logo2} alt="" />
+              </ActiveNavLink>
+          
         </div>
         <img className="pr-5 cursor-pointer" src={logout} alt="" />
       </div>

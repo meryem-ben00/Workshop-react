@@ -5,6 +5,12 @@ import Users from "./pages/Users";
 import Patients from "./pages/Patients";
 import Test from "./pages/Test";
 import Osama from "./pages/Osama";
+import Settings from "./pages/Settings";
+import Settings_password from "./pages/Settings_password";
+import Settings_email from "./pages/Settings_email";
+import RegisterPatient from "./pages/RegisterPatient";
+
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +22,10 @@ function App() {
           <Route path="/patients" element={<Patients />} />
           <Route path="/test" element={<Test />} />
           <Route path="/osama" element={<Osama />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/settings_password" element={<Settings_password />} />
+          <Route path="/settings_email" element={<Settings_email />} />
+          <Route path="/RegisterPatient" element={<RegisterPatient />} />
         </Routes>
       </BrowserRouter>
     </div>
