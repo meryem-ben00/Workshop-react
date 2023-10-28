@@ -11,6 +11,7 @@ import Settings_email from "./pages/Settings_email";
 import RegisterPatient from "./pages/RegisterPatient";
 
 
+import Chat from "./pages/chat";
 function App() {
   return (
     <div className="App">
@@ -26,6 +27,7 @@ function App() {
           <Route path="/settings_password" element={<Settings_password />} />
           <Route path="/settings_email" element={<Settings_email />} />
           <Route path="/RegisterPatient" element={<RegisterPatient />} />
+          <Route path="/chat" element={<Chat />} />
         </Routes>
       </BrowserRouter>
     </div>
