@@ -8,27 +8,28 @@ import { faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 
 
 function Chat() {
-    return <div className='relative flex'>
+    return <div className='relative flex flex-col sm:flex-row'>
         <h1 className="absolute mt-10 ml-16 text-white text-4xl z-10 font-bold">Chat </h1>
         <div style={{ width: 'calc(33.33% - 5rem)' }} className="bg-white rounded-2xl shadow-lg p-4 mt-16 ml-60 z-20 pb-16">
             <p className='text-xl ml-3'>Chat</p>
-                <div className="flex items-center mb-4 mt-4">
-                <div className="relative">
-                    <input className="border-none  rounded-xl p-4 pl-12 text-sm flex-grow shadow-[0_1px_6px] shadow-violet-100 w-80 mr-5 hover:shadow-violet-200 focus:shadow-violet-200 focus:border-none focus:outline-none"  placeholder="Search" />
+            <div className="flex flex-col sm:flex-row items-center mb-4 mt-4">
+                <div className="relative flex-grow mb-4 sm:mb-0 sm:mr-5">
+                    <input className="border-none rounded-xl p-4 pl-12 text-sm flex-grow shadow-[0_1px_6px] shadow-violet-100 w-full sm:max-w-xs hover:shadow-violet-200 focus:shadow-violet-200 focus:border-none focus:outline-none" placeholder="Search" />
                     <svg className="absolute left-3 top-3 w-6 h-6 text-gray-400" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
                         <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                     </svg>
                 </div>
-                    <button className="p-3 text-black rounded-md ml-0 font-bold">CHAT <FontAwesomeIcon icon={faPlus}  className='ml-4'/></button>
-                </div>
+                <button className="p-3 text-black rounded-md ml-0 font-bold">CHAT <FontAwesomeIcon icon={faPlus}  className='ml-4'/></button>
+            </div>
                 
                 
                 <div className="flex text-sm items-center justify-between border-none shadow-[0_1px_10px] shadow-violet-400 p-3 rounded-lg mb-7">
                     <div className="flex items-center">
-                        <div className="relative inline-block">
-                            <img className="h-15 w-14 rounded-full mr-4" src={profil} alt="Profile" />
-                            <span className="absolute bottom-0 right-0 block h-5 w-5 rounded-full bg-blue-500 border-4 border-white mr-3"></span>
-                        </div>                        <div>
+                        <div className="relative inline-block w-14 h-15">
+                            <img className=" rounded-full" src={profil} alt="Profile" />
+                            <span className="absolute bottom-0 right-0 block h-5 w-5 rounded-full bg-blue-500 border-4 border-white"></span>
+                        </div>   
+                        <div className='ml-4'>
                             <h2 className="text-lg font-bold mb-2">Doctor</h2>
                             <p className='text-gray-400'>chat</p>
                         </div>
@@ -123,10 +124,10 @@ function Chat() {
                             <p className='text-gray-400'>chat</p>
                         </div>
                     </div>
-                    <div className="flex items-center mt-9 mr-0 ml-20">
+                    <div className="flex text-sm items-center mt-9 mr-0 ml-20">
                         <p>00:31:00</p>
                     </div>
-                    <div className='fles items-center'>
+                    <div className='flex items-center'>
                     <div className="p-4">
                         <FontAwesomeIcon icon={faPlay} className="text-gray-600 w-5 h-5 mr-5" />
                     </div>
@@ -203,19 +204,19 @@ function Chat() {
                             S
                     </div>
                 </div>
-                <div className='ml-5'>
+                <div className="relative ml-3 mt-5 mr-3">
                     <input 
                         type="text" 
                         placeholder='Digite a mensagem' 
-                        className='absolute mb-6 p-5 pl-10 pr-10 border border-black bottom-0 rounded-xl mx-auto' 
-                        style={{ width: 'calc(40% + 18rem)'}} 
+                        className='w-full p-5 pl-10 pr-[calc(3rem + 40px)] border border-black rounded-xl' 
                     />
-                    <div className="bg-black text-white px-3 py-2 rounded-xl absolute text-2xl text-black-500 right-56 bottom-8">
+                    <div className="bg-black text-white px-3 py-2 rounded-xl absolute text-2xl text-black-500 right-32 bottom-2">
                         <FontAwesomeIcon icon={faPaperPlane} className="rotate-45" />
                     </div>
-                    <FontAwesomeIcon icon={faPaperclip}  style={{ transform: "rotate(314deg)" }} className="absolute text-2xl text-black-500 right-44 bottom-12" />
-                    <FontAwesomeIcon icon={faCheck} className="absolute text-2xl text-black-500 right-32 bottom-12" />
+                    <FontAwesomeIcon icon={faPaperclip} style={{ transform: "rotate(314deg)" }} className="absolute text-2xl text-black-500 right-20 bottom-6" />
+                    <FontAwesomeIcon icon={faCheck} className="absolute text-2xl text-black-500 right-7 bottom-6" />
                 </div>
+
 
             </div>
 

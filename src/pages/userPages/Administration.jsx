@@ -45,7 +45,7 @@ function Administration() {
           </tr>
       </thead>
       <tbody className="space-y-4">
-          <tr class=" dark:bg-gray-800">
+          <tr>
               <th scope="row" class="px-1 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
               
               <div className="flex items-center">
@@ -78,7 +78,7 @@ function Administration() {
                 </div>
               </td>
           </tr>
-          <tr class=" dark:bg-gray-800">
+          <tr>
               <th scope="row" class="px-1 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
               
               <div className="flex items-center">
@@ -111,7 +111,7 @@ function Administration() {
                 </div>
               </td>
           </tr>
-          <tr class=" dark:bg-gray-800">
+          <tr>
               <th scope="row" class="px-1 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
               
               <div className="flex items-center">
@@ -144,7 +144,7 @@ function Administration() {
                 </div>
               </td>
           </tr>
-          <tr class=" dark:bg-gray-800">
+          <tr>
               <th scope="row" class="px-1 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
               
               <div className="flex items-center">
@@ -177,7 +177,7 @@ function Administration() {
                 </div>
               </td>
           </tr>
-          <tr class=" dark:bg-gray-800">
+          <tr>
               <th scope="row" class="px-1 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
               
               <div className="flex items-center">
@@ -210,7 +210,7 @@ function Administration() {
                 </div>
               </td>
           </tr>
-          <tr class=" dark:bg-gray-800">
+          <tr>
               <th scope="row" class="px-1 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
               
               <div className="flex items-center">
