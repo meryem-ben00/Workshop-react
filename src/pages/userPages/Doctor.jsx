@@ -10,6 +10,8 @@ import garcon from '../../images/garcon.png';
 import fille from '../../images/fille.png';
 import garcon1 from '../../images/garcon (1).png';
 import fille2 from '../../images/fille (2).png';
+import { Link } from 'react-router-dom';
+
 
 function Doctor() {
   return <div> 
@@ -18,10 +20,12 @@ function Doctor() {
         <h1 className="absolute top-20 left-20 text-white text-xl">List of doctors</h1>
         <h3 className="absolute top-28 left-20 text-white">345 available doctors</h3>
       </div>
-      <button className="absolute mt-44 right-20 bg-lime-700 text-white text-sm py-2 px-5 rounded " style={{ backgroundColor: '#5f8d4e' }}>
-         <FontAwesomeIcon icon={faUserPlus} className="mr-2"/>
-         Add new doctor
-         </button>
+      <Link to="/users/addDoctor" className="absolute mt-44 right-20 bg-lime-700 text-white text-sm py-2 px-5 rounded " style={{ backgroundColor: '#5f8d4e' }}>
+          <button >
+            <FontAwesomeIcon icon={faUserPlus} className="mr-2"/>
+            Add new doctor
+          </button>
+      </Link>
     </div>
     
 <div class="mt-32 ml-20 mr-20">
