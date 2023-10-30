@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import { RxCross1 } from 'react-icons/rx'
 import { PiDotsNineBold, PiDotsSixVerticalBold } from 'react-icons/pi'
 import { FaCheck } from 'react-icons/fa'
