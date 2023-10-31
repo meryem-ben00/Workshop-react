@@ -91,7 +91,6 @@ aws s3api put-bucket-policy --bucket hostreactapp.xyz --policy '{
 }
 ]
 }'
+aws s3 sync build/ s3://hostreactapp.xyz
 
 <!-- aws s3 cp index.html s3://hostreactapp.xyz/ -->
-
-aws s3 sync build/ s3://hostreactapp.xyz
