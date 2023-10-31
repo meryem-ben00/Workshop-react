@@ -34,7 +34,6 @@ function App() {
           <Route path = "/users/addDoctor" element = { < Principale /> }/>
           <Route path = "/SignIn" element = { < SignIn /> }/>
           <Route path = "/SignUp" element = { < SignUp /> }/>
-
         </Routes>
       </BrowserRouter>
     </div>
