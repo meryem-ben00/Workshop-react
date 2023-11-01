@@ -20,8 +20,8 @@ function Patients() {
     return <div> 
     <div className="relative p-4 flex items-center justify-between"> 
       <div>
-        <h1 className="absolute top-10 left-20 text-white text-xl text-center text-white font-medium text-lg leading-5 whitespace-nowrap mb-3.5 font-poppins">List of doctors</h1>
-        <h3 className="absolute mt-4 left-20 text-white font-poppins text-white font-medium text-sm leading-5">345 available doctors</h3>
+        <h1 className="absolute top-10 left-20 text-white text-xl text-center text-white font-medium text-lg leading-5 whitespace-nowrap mb-3.5 font-poppins">List of patients</h1>
+        <h3 className="absolute mt-4 left-20 text-white font-poppins text-white font-medium text-sm leading-5">345 available patients</h3>
       </div>
       <NavLink to="/RegisterPatient">
         <div className="mt-4 py-2 px-5 mr-12 rounded">
