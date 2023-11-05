@@ -1,4 +1,3 @@
-import React from 'react'
 import { RxCross1 } from 'react-icons/rx'
 import { PiDotsNineBold, PiDotsSixVerticalBold } from 'react-icons/pi'
 import { FaCheck } from 'react-icons/fa'
@@ -48,7 +47,10 @@ function Test() {
                       <h1 className="text-2xl ml-4 text-white">Test #1</h1>
                     </div>
 
-                    <RxCross1 className="text-3xl cursor-pointer text-[#1e2e5c]" />
+                    <RxCross1
+                      className="text-3xl cursor-pointer text-[#1e2e5c]"
+                      on
+                    />
                   </div>
 
                   <label

@@ -6,6 +6,7 @@
   margin: 0;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+  
 }
 body {
   margin: 0;
@@ -26,3 +27,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+

@@ -9,8 +9,12 @@ import Settings from "./pages/Settings";
 import Settings_password from "./pages/Settings_password";
 import Settings_email from "./pages/Settings_email";
 import RegisterPatient from "./pages/RegisterPatient";
+import Principale from "./pages/addDoctor/Principale.jsx";
+import SignIn from "./pages/sign/SignIn";
+import SignUp from "./pages/sign/SignUp";
 
 
+import Chat from "./pages/chat";
 function App() {
   return (
     <div className="App">
@@ -26,6 +30,11 @@ function App() {
           <Route path="/settings_password" element={<Settings_password />} />
           <Route path="/settings_email" element={<Settings_email />} />
           <Route path="/RegisterPatient" element={<RegisterPatient />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path = "/users/addDoctor" element = { < Principale /> }/>
+          <Route path = "/SignIn" element = { < SignIn /> }/>
+          <Route path = "/SignUp" element = { < SignUp /> }/>
+
         </Routes>
       </BrowserRouter>
     </div>

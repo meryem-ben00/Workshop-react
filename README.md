@@ -68,3 +68,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+aws s3api create-bucket --bucket hostreactapp.xyz --region us-east-1
+
+aws s3api put-public-access-block --bucket hostreactapp.xyz --public-access-block-configuration "BlockPublicAcls=false,IgnorePublicAcls=false,BlockPublicPolicy=false,RestrictPublicBuckets=false"
+
+aws s3api put-bucket-website --bucket hostreactapp.xyz --website-configuration '{
+"IndexDocument": {
+"Suffix": "index.html"
+}
+}'
+
+aws s3api put-bucket-policy --bucket hostreactapp.xyz --policy '{
+"Version": "2012-10-17",
+"Statement": [
+{
+"Sid": "PublicReadGetObject",
+"Effect": "Allow",
+"Principal": "*",
+"Action": "s3:GetObject",
+"Resource": "arn:aws:s3:::hostreactapp.xyz/*"
+}
+]
+}'
+aws s3 sync build/ s3://hostreactapp.xyz
+
+<!-- aws s3 cp index.html s3://hostreactapp.xyz/ -->
